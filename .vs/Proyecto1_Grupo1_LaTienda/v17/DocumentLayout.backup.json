@@ -1,0 +1,127 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|c:\\users\\cuadr\\desktop\\universidad\\programacion iv\\proyecto1_grupo1\\proyecto1_grupo1_latienda\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|solutionrelative:cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|c:\\users\\cuadr\\desktop\\universidad\\programacion iv\\proyecto1_grupo1\\proyecto1_grupo1_latienda\\gestordatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|solutionrelative:gestordatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|c:\\users\\cuadr\\desktop\\universidad\\programacion iv\\proyecto1_grupo1\\proyecto1_grupo1_latienda\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|solutionrelative:factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|c:\\users\\cuadr\\desktop\\universidad\\programacion iv\\proyecto1_grupo1\\proyecto1_grupo1_latienda\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|solutionrelative:producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|c:\\users\\cuadr\\desktop\\universidad\\programacion iv\\proyecto1_grupo1\\proyecto1_grupo1_latienda\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|c:\\users\\cuadr\\desktop\\universidad\\programacion iv\\proyecto1_grupo1\\proyecto1_grupo1_latienda\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A5827FE-8F86-4AFE-B86F-BEAC579936EA}|Proyecto1_Grupo1_LaTienda.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Cliente.cs",
+              "RelativeDocumentMoniker": "Cliente.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Cliente.cs",
+              "RelativeToolTip": "Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T01:00:40.342Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Producto.cs",
+              "RelativeDocumentMoniker": "Producto.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Producto.cs",
+              "RelativeToolTip": "Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T01:00:59.546Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Factura.cs",
+              "RelativeDocumentMoniker": "Factura.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Factura.cs",
+              "RelativeToolTip": "Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T01:01:28.555Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GestorDatos.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\GestorDatos.cs",
+              "RelativeDocumentMoniker": "GestorDatos.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\GestorDatos.cs",
+              "RelativeToolTip": "GestorDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T01:01:40.251Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T00:52:52.237Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion IV\\Proyecto1_Grupo1\\Proyecto1_Grupo1_LaTienda\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T00:52:29.269Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
