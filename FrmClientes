@@ -1,0 +1,147 @@
+using System;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace LaEsquinaApp
+{
+    public partial class FrmClientes : Form
+    {
+        private readonly ClienteService _service;
+
+        public FrmClientes()
+        {
+            InitializeComponent();
+
+            // Conecta con la lista en memoria del "arquitecto".
+            // Si tu equipo usa otro contenedor, cambia aquí.
+            _service = new ClienteService(DataStore.Clientes);
+
+            ConfigurarGrid();
+            RefrescarGrid();
+        }
+
+        private void ConfigurarGrid()
+        {
+            dgvClientes.AutoGenerateColumns = true;
+            dgvClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvClientes.MultiSelect = false;
+            dgvClientes.ReadOnly = true;
+            dgvClientes.AllowUserToAddRows = false;
+        }
+
+        private void RefrescarGrid()
+        {
+            var data = _service.Listar()
+                .Select(c => new
+                {
+                    c.Id,
+                    c.Nombre,
+                    c.Direccion,
+                    c.Telefono,
+                    Estado = c.Activo ? "Activo" : "Inactivo"
+                })
+                .ToList();
+
+            dgvClientes.DataSource = null;
+            dgvClientes.DataSource = data;
+        }
+
+        private int? ObtenerIdSeleccionado()
+        {
+            if (dgvClientes.CurrentRow == null) return null;
+            return Convert.ToInt32(dgvClientes.CurrentRow.Cells["Id"].Value);
+        }
+
+        private void Limpiar()
+        {
+            txtNombre.Clear();
+            txtDireccion.Clear();
+            txtTelefono.Clear();
+            txtNombre.Focus();
+
+            dgvClientes.ClearSelection();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _service.Agregar(
+                    txtNombre.Text,
+                    txtDireccion.Text,
+                    txtTelefono.Text,
+                    getNextId: () => DataStore.NextClienteId++   // Autoincremental en memoria
+                );
+
+                RefrescarGrid();
+                Limpiar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Clientes",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            var id = ObtenerIdSeleccionado();
+            if (!id.HasValue)
+            {
+                MessageBox.Show("Seleccione un cliente.", "Clientes",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            try
+            {
+                _service.Modificar(id.Value, txtNombre.Text, txtDireccion.Text, txtTelefono.Text);
+                RefrescarGrid();
+                Limpiar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Clientes",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnInactivar_Click(object sender, EventArgs e)
+        {
+            var id = ObtenerIdSeleccionado();
+            if (!id.HasValue)
+            {
+                MessageBox.Show("Seleccione un cliente.", "Clientes",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            try
+            {
+                _service.ToggleActivo(id.Value);
+                RefrescarGrid();
+                Limpiar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Clientes",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void dgvClientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvClientes.CurrentRow == null) return;
+
+            txtNombre.Text = dgvClientes.CurrentRow.Cells["Nombre"].Value?.ToString();
+            txtDireccion.Text = dgvClientes.CurrentRow.Cells["Direccion"].Value?.ToString();
+            txtTelefono.Text = dgvClientes.CurrentRow.Cells["Telefono"].Value?.ToString();
+        }
+    }
+}
+ 
