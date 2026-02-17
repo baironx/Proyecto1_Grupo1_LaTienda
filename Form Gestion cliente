@@ -1,7 +1,0 @@
-TextBox:  txtNombre ,  txtDireccion ,  txtTelefono 
-
-DataGridView:  dgvClientes 
-
-Botones:  btnAgrega r ,  btnModificar ,  btnInactivar ,  btnLimpiar 
-
-(Opcional) TextBox buscar:  txtBuscar  + botón  btnBuscar 
