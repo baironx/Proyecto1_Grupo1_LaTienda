@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TiendaLaEsquina;
 
-namespace TiendaLaEsquina
+namespace TiendaLaEsquina.Core
 {
     /// <summary>
     /// Clase estática que gestiona todos los datos en memoria del sistema
@@ -311,9 +308,9 @@ namespace TiendaLaEsquina
             LimpiarTodosDatos();
 
             // Agregar algunos clientes de prueba
-            AgregarCliente("Isaac Perez", "San José, Centro", "88887777", out _);
-            AgregarCliente("Nataly Gonzalez", "Heredia, San Francisco", "82828181", out _);
-            AgregarCliente("Jery Rodriguez", "Alajuela, Centro", "88889999", out _);
+            AgregarCliente("Juan Pérez", "San José, Centro", "88887777", out _);
+            AgregarCliente("María González", "Heredia, San Francisco", "22223333", out _);
+            AgregarCliente("Carlos Rodríguez", "Alajuela, Centro", "88889999", out _);
         }
         #endregion
     }

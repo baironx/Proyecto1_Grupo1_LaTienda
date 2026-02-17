@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TiendaLaEsquina
+namespace TiendaLaEsquina.Core
 {
     /// <summary>
     /// Representa una factura del sistema

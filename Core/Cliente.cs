@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TiendaLaEsquina
+namespace TiendaLaEsquina.Core
 {
     /// <summary>
     /// Representa un cliente del sistema
@@ -22,7 +20,7 @@ namespace TiendaLaEsquina
         #region Constructor
         public Cliente()
         {
-            Activo = true; // Por defecto, el cliente está activo
+            Activo = true; // Por defecto los clientes están activos
         }
 
         public Cliente(int id, string nombre, string direccion, string telefono)
@@ -35,46 +33,49 @@ namespace TiendaLaEsquina
         }
         #endregion
 
-        #region Métodos de validación
-        ///  <summary>
-        ///  Valida que todos los campos del cliente estén completos
-        ///  </summary>
-
+        #region Métodos de Validación
+        /// <summary>
+        /// Valida que todos los campos del cliente estén completos
+        /// </summary>
         public static string ValidarCampos(string nombre, string direccion, string telefono)
         {
             if (string.IsNullOrWhiteSpace(nombre))
-                return "El nombre del cliente es obligatorio.";
-            if (string.IsNullOrWhiteSpace(direccion))
-                return "La dirección del cliente es obligatoria.";
-            if (string.IsNullOrWhiteSpace(telefono))
-                return "El teléfono del cliente es obligatorio.";
+                return "El nombre del cliente es obligatorio";
 
-            return string.Empty; // No hay errores
+            if (string.IsNullOrWhiteSpace(direccion))
+                return "La dirección del cliente es obligatoria";
+
+            if (string.IsNullOrWhiteSpace(telefono))
+                return "El teléfono del cliente es obligatorio";
+
+            return string.Empty; // Sin errores
         }
-        ///  <summary>
-        ///  Valida que el teléfono tenga un formato correcto (solo dígitos).
-        ///  </summary>
-        
+
+        /// <summary>
+        /// Valida que el teléfono contenga solo números
+        /// </summary>
         public static bool ValidarTelefono(string telefono)
         {
             if (string.IsNullOrWhiteSpace(telefono))
                 return false;
-            // Verificar que el teléfono solo contenga dígitos, espacios o guiones.
-            return telefono.All(c => char.IsDigit(c) || char.IsWhiteSpace(c) || c == '-');
+
+            // Verificar que solo contenga dígitos, espacios o guiones
+            return telefono.All(c => char.IsDigit(c) || c == ' ' || c == '-');
         }
-        ///  <summary>
-        ///  Valida que el nombre no contenga caracteres especiales.
-        ///  </summary>
+
+        /// <summary>
+        /// Valida que el nombre contenga solo letras y espacios
+        /// </summary>
         public static bool ValidarNombre(string nombre)
         {
             if (string.IsNullOrWhiteSpace(nombre))
                 return false;
-            // Verificar que el nombre solo contenga letras, espacios o guiones.
-            return nombre.All(c => char.IsLetter(c) || char.IsWhiteSpace(c) || c == '-');
+
+            return nombre.All(c => char.IsLetter(c) || c == ' ');
         }
         #endregion
 
-        #region Sobrescritura de metodos
+        #region Sobrescritura de métodos
         public override string ToString()
         {
             return $"{Nombre} - {Telefono} - {(Activo ? "Activo" : "Inactivo")}";
